@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+  <h3>Ediçao de fotos</h3>
+
+  <div class="container imagem" >
+    
+       <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+              <button class="btn btn-info btn-block" id="camera"> Câmera </button>
+              <img id="imagem" class="img-responsive">
+              
+              
+            </div>
+        </div>
+      </div>
+
+
+<form id="editImage">
+
+ 
+   <label for="opa">Opacity</label>
+ <input class="range" id="opa" name="opa" type="range" min="1" max="100" value="0" onchange="dimagem();"> 
+ 
+ <label for="sat">Saturation</label>
+ <input class="range" id="sat" name="sat" type="range" min="1" max="100" value="0" onchange="dimagem();"> 
+  
+  <label for="gs">GrayScale</label>
+ <input class="range" id="gs" name="gs" type="range" min="1" max="100" value="0"onchange="dimagem();"> 
+  
+  <label for="blu">Blur</label>
+ <input  class="range" id="blu" name="blu" type="range" min="1" max="50" value="0"onchange="dimagem();">                      
+
+</form>
+
+
+
+</div>
+
+
